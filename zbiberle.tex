@@ -1,14 +1,17 @@
 \documentclass[localFont,alternative]{yaac-another-awesome-cv}
 
-\name{}{Ing. Zdeněk Biberle}
-\tagline{Softwarový vývojář}
+% thank you, https://stackoverflow.com/a/16450157/964015
+\newcommand{\dumblang}[2]{{#2}}
+
+\name{\dumblang{Ing.}{}}{Zdeněk Biberle}
+\tagline{\dumblang{Softwarový vývojář}{Software engineer}}
 \photo{2.5cm}{zbiberle-foto}
 \socialinfo{
 	\linkedin{zdeněk-biberle}{zden\%C4\%9Bk-biberle}\\
-	\github{d-tris}\\
-	\email{zdenek.biberle@elso-systems.com}\\
-	\smartphone{+420 776 392 816}\\
-	\address{Brno}
+	\github{zdenek-biberle}\\
+	\email{z.biberle@gmail.com}\\
+	\smartphone{+420 721 770 568}\\
+	\address{\dumblang{Brno}{Brno, CZE}}
 }
 
 \begin{document}
@@ -20,109 +23,166 @@
 		{\textsc{Zdeněk Biberle - CV}}
 		{\thepage}
 
-	\sectionTitle{Pracovní zkušenosti}{\faSuitcase}
+	Hi, my name is Zdeněk and I am a software engineer. I enjoy programming, architecture, design, infrastructure (as long as it's IaC enough) and very occasionally giving talks about topics I find interesting to my colleagues. I like to focus on generality, maintainability and extensibility of my solutions.
+
+	In my free time I run my own little homelab for my friends and family, play music, play tabletop and video games and occasionally draw.
+
+	\sectionTitle{\dumblang{Pracovní zkušenosti}{Experience}}{\faSuitcase}
 	\begin{experiences}
 		\experience
-			{Současnost}
-			{Softwarový vývojář}{ELSO SERVICE BRNO, spol. s r.o.}{Brno}
-			{Srpen 2013}
+			{\dumblang{Současnost}{Present}}
+			{Principal Software Engineer}{Y Soft Print Management Solutions, a.s.}{Brno}
+			{\dumblang{Srpen 2019}{August 2019}}
 			{
 				\begin{itemize}
-				\item Vývoj a návrh desktopových aplikací na bázi Qt a Apache Pivot
-				\item Vývoj a návrh webových aplikací na bázi ASP.NET MVC 4, Spring Boot a Ember.js.
-					\begin{itemize}
-						\item Pro ÚZIS ČR a jiné
-					\end{itemize}
-				\item Instalace, konfigurace a údržba interní CI a testovací infrastruktury
-				\item Vývoj, instalace, konfigurace a podpora monitorovací infrastruktury na bázi Icinga 2, Graphite, Grafana, Logstash, Kibana, ElasticSearch.
-					\begin{itemize}
-						\item Pro ČEZ Distribuce, a. s. a jiné
-					\end{itemize}
+					\item \dumblang{Vývoj a návrh API a backendových aplikací}{Design and implementation of APIs and backend applications}
+					\item \dumblang{UI}{Occasional work on UIs}
+					\item \dumblang{Vývoj, návrh a občasná údržba cloudové infrastruktury}{Design, implementation and occasional maintenance of Y Soft's cloud infrastructure}
+					\item \dumblang{Vývoj, návrh a údržba build infrastruktury}{Contributions to the design and implementation of Y Soft's build infrastructure}
+					\item \dumblang{Architektura}{Contributions to the overall architectural design of Y Soft's products, trying to shape them so that they're a better fit for the modern cloud world}
+					\item \dumblang{PKI}{Go-to-person for things related to Y Soft's cloud PKI}
 				\end{itemize}
 			}
-			{Bash, C, C++, C\#, Java, JavaScript, Python, CMake, Maven, MSBuild, qmake, Apache Tomcat, WildFly, Jenkins, GitLab}
+			{Atlassian Bamboo, Bash, C\#, Docker, Erlang, Gradle, Helm, Java, JavaScript, Kotlin, Kubernetes, Make, Microsoft Azure, Python, Terraform, TypeScript}
 		\emptySeparator
 		\experience
-			{Květen 2010}
-			{Odborná praxe}{Gymnázium Matyáše Lercha}{Brno}
+			{\dumblang{Červenec 2019}{July 2019}}
+			{\dumblang{Softwarový vývojář}{Software engineer}}{ELSO SERVICE BRNO, spol. s r.o.}{Brno}
+			{\dumblang{Srpen 2013}{August 2013}}
+			{
+				\begin{itemize}
+				\item \dumblang{Vývoj a návrh desktopových aplikací na bázi Qt a Apache Pivot}{Design and implementation of desktop applications based on Qt and Apache Pivot}
+				\item \dumblang{Vývoj a návrh webových aplikací na bázi ASP.NET MVC 4, Spring Boot a Ember.js.}{Design and implementation of web applications based on ASP.NET MVC 4, Spring Boot and Ember.js}
+					\begin{itemize}
+						\item \dumblang{Primárně pro Ústav zdravotnických informací a statistiky ČR}{Primarily for the Institute of Health Information and Statistics of the Czech Republic}
+					\end{itemize}
+				\item \dumblang{Instalace, konfigurace a údržba interní CI a testovací infrastruktury}{Design, implementation and maintenance of internal CI and test infrastructure}
+				\item \dumblang{Vývoj, instalace, konfigurace a podpora monitorovací infrastruktury na bázi Icinga 2, Graphite, Grafana, Logstash, Kibana, ElasticSearch}{Design, implementation and support of infrastructure monitoring based on Icinga 2, Graphite, Grafana, Logstash, Kibana and ElasticSearch}
+				\end{itemize}
+			}
+			{Bash, C, C++, C\#, Java, JavaScript, Python, CMake, Maven, MSBuild, qmake, Jenkins, GitLab}
+		\emptySeparator
+		\experience
+			{\dumblang{Květen 2010}{May 2010}}
+			{\dumblang{Odborná praxe}{Internship}}{\dumblang{Gymnázium Matyáše Lercha}{Mathias Lerch Gymnasium}}{\dumblang{Brno}{Brno, CZE}}
 			{}
 			{
 				\begin{itemize}
-					\item Správa HW a sítě
-					\item Vývoj databázových aplikací
+					\item \dumblang{Správa HW a sítě}{Hardware and network administration}
+					\item \dumblang{Vývoj databázových aplikací}{Simple database application development}
 				\end{itemize}
 			}
-			{C, PHP, MySQL, BIND}
+			{BIND, C, MySQL, PHP}
 		\emptySeparator
 		\experience
-			{Březen 2009}
-			{Odborná praxe}{eD system a.s.}{Brno}
+			{\dumblang{Březen 2009}{March 2009}}
+			{\dumblang{Odborná praxe}{Internship}}{eD system a.s.}{\dumblang{Brno}{Brno, CZE}}
 			{}
 			{
 				\begin{itemize}
-					\item Montáž PC
+					\item \dumblang{Montáž PC}{PC assembly}
 				\end{itemize}
 			}
-			{Hardware, ATX počítače}
+			{Hardware, \dumblang{ATX počítače}{Good ol' ATX computers}}
 		\emptySeparator
 	\end{experiences}
 
-	\sectionTitle{Znalosti}{\faCode}
+	\sectionTitle{\dumblang{Znalosti}{Skills}}{\faCode}
+
+	The following is essentially a big list of technical things that I am at least somewhat familiar with. It is ordered alphabetically,
+	because trying to give it any other order (perhaps by familiarity?) would be almost futile. 
+
 	\begin{keywords}
-		\keywordsentry{Programovací jazyky}{Bash, C, C++, C\#, D, GLSL, Java, JavaScript, Haskell, Python, SQL, VHDL}
-		\keywordsentry{Jiné jazyky}{CSS, HTML, JSON, LaTeX, Markdown, YAML, XML}
-		\keywordsentry{Databáze}{MariaDB, MSSQL}
-		\keywordsentry{Middleware, frameworky}{ASP.NET MVC 4, Django 2, Spring Boot 1}
-		\keywordsentry{Paradigmata}{Funkcionální, imperativní, logické programování a objektově orientované programování, konkurentní popis hardwaru}
-		\keywordsentry{Vývojové nástroje}{NetBeans, vim, Visual Studio, Git, Mercurial, SVN}
+		\keywordsentry{\dumblang{Programovací jazyky}{Programming languages}}
+			{Bash, C, C++, C\#, D, Erlang, GLSL, Haskell, Java, JavaScript, Prolog, Python, SQL, TypeScript, VHDL}
+		\keywordsentry{\dumblang{Jiné jazyky}{Other languages}}
+			{CSS, Dhall, HCL, HTML, JSON, jq, LaTeX, Markdown, XML, YAML}
+		\keywordsentry{\dumblang{Databáze}{Databases}}
+			{MariaDB, Microsoft SQL Server, PostgreSQL}
+		\keywordsentry{Message brokers}
+			{ActiveMQ Artemis, RabbitMQ}
+		\keywordsentry{\dumblang{Middleware, frameworky}{Common frameworks}}
+			{ASP.NET Core, ASP.NET MVC, Django, Spring Boot, Qt}
+		\keywordsentry{\dumblang{Kontejnery}{Containers}}
+			{Docker, Kubernetes, Helm}
+		\keywordsentry{\dumblang{Paradigmata}{Paradigms}}
+			{\dumblang{Deklarativní, funkcionální, imperativní, logické a objektově orientované programování, konkurentní popis hardwaru}
+			{Declarative, functional, imperative, logic and object-oriented programming, concurrent hardware description}}
+		\keywordsentry{\dumblang{Nástroje pro správu verzí}{Version control systems}}
+			{Git, Mercurial, SVN}
+		\keywordsentry{\dumblang{IDE a textové editory}{IDEs and text editors}}
+			{vim, Visual Studio, Visual Studio Code, IntelliJ IDEA, IntelliJ Rider, Apache NetBeans, indenting with tabs instead of spaces}
 	\end{keywords}
 	
-	\pagebreak
-
-	\sectionTitle{Vzdělání}{\faGraduationCap}
+	\sectionTitle{\dumblang{Vzdělání}{Education}}{\faGraduationCap}
 	\begin{projects}
 		\project
-			{Fakulta informačních technologií VUT v Brně, Božetěchova 1/2, 612 66 Brno}
+			{\dumblang
+				{Fakulta informačních technologií VUT v Brně, Božetěchova 2/1, 612 00 Brno}
+				{Faculty of Information Technology, Brno University of Technology, Božetěchova 2/1, 612 00 Brno, CZE}}
 			{2014 -- 2017}
-			{Magisterský studijní program - Počítačová grafika a multimédia}
-			{Teorie, technologie, postupy a dovednosti v oblasti počítačové grafiky a multimédií. Syntéza obrazů v počítačové grafice, zpracování a rozpoznávání řeči, algoritmy pro práci se zvukem a videosekvencemi v multimédiích a tvorba systémů pro komunikaci člověka s počítačem.
+			{\dumblang
+				{Magisterský studijní program - Počítačová grafika a multimédia}
+				{Master Degree Programme - Computer Graphics and Multimedia}}
+			{\dumblang
+				{Teorie, technologie, postupy a dovednosti v oblasti počítačové grafiky a multimédií. Syntéza obrazů v počítačové grafice, zpracování a rozpoznávání řeči, algoritmy pro práci se zvukem a videosekvencemi v multimédiích a tvorba systémů pro komunikaci člověka s počítačem.}
+				{Theory, technology, procedures, and skills in the field of computer graphics and multimedia. Image synthesis in computer graphics, speech processing and recognition, sound and video sequences algorithms for multimedia, and development of systems for human-computer interaction.}
 			
 			\bigskip
 			
-			Závěrečná práce: Emulátor domácího počítače Amiga A500 v FPGA}
-			{Amiga, Amiga 500, A500, Commodore, FPGA, emulace, reimplementace, Minerva, Pipistrello}
+			\dumblang
+				{Závěrečná práce: Emulátor domácího počítače Amiga A500 v FPGA}
+				{Thesis: Emulator of Amiga A500 Home Computer in FPGA}}
+			{Amiga, Amiga 500, A500, Commodore, FPGA, \dumblang{emulace}{emulation}, \dumblang{reimplementace}{reimplementation}, Minerva, Pipistrello}
 		
 		\project
-			{Fakulta informačních technologií VUT v Brně, Božetěchova 1/2, 612 66 Brno}
+			{\dumblang
+				{Fakulta informačních technologií VUT v Brně, Božetěchova 2/1, 612 00 Brno}
+				{Faculty of Information Technology, Brno University of Technology, Božetěchova 2/1, 612 00 Brno, CZE}}
 			{2011 -- 2014}
-			{Bakalářský studijní program - Informační technologie}
-			{Konstrukce, programování a údržba počítačových systémů a číslicových zařízení, konfigurace počítačů, počítačových sítí a systémů založených na počítačích.
+			{Bachelor's Degree Programme - Information Technology}
+			{\dumblang
+				{Konstrukce, programování a údržba počítačových systémů a číslicových zařízení, konfigurace počítačů, počítačových sítí a systémů založených na počítačích.}
+				{Design, programming and servicing of computer systems, digital systems, computer networks and computer-based systems. Programming and administration of database systems and information systems.}
 			
 			\bigskip
 			
-			Závěrečná práce: Virtual Textures}
-			{počítačová grafika, virtuální textury, megatexture, sparse texture, OpenGL}
+			Thesis: Virtual Textures}
+			{
+				\dumblang{počítačová grafika}{computer graphics},
+				\dumblang{virtuální textury}{virtual textures},
+				\dumblang{megatexture}{megatextures},
+				sparse textures,
+				OpenGL
+			}
 		
 		\project
 			{Střední škola informačních technologií a sociální péče, Purkyňova 2832/97, 612 00, Brno}
 			{2007 -- 2011}
-			{Informační technologie}
-			{Informační a databázové systémy, počítačové sítě, technické vybavení}
+			{\dumblang{Informační technologie}{Information Technology}}
+			{\dumblang
+				{Informační a databázové systémy, počítačové sítě, technické vybavení}
+				{Information and database systems, computer networks and computer hardware}}
 			{}
 	\end{projects}
-	
-	\sectionTitle{Certifikace}{\faCertificate}
+
+	\sectionTitle{\dumblang{Certifikace}{Certifications}}{\faCertificate}
 	\begin{scholarship}
 		\scholarshipentry
 			{2018}
 			{Oracle Certified Associate, Java SE 8 Programmer}
 	\end{scholarship}
 	
-	\sectionTitle{Jazyky}{\faLanguage}
+	\sectionTitle{\dumblang{Jazyky}{Languages}}{\faLanguage}
 	\begin{skills}
-		\skill{Čeština}{5}
-		\skill{Angličtina}{4}
-		\skill{Japonština}{1}
+		\skill{\dumblang{Čeština}{Czech}}{5}
+			{\dumblang{}{It's my native language, after all. Although I tend to use a lot of English words when speaking Czech.}}
+		\emptySeparator
+		\skill{\dumblang{Angličtina}{English}}{4}
+			{\dumblang{}{I like to think that my English is pretty good, although my pronunciation could use some work.}}
+		\emptySeparator
+		\skill{\dumblang{Japonština}{Japanese}}{1}
+			{\dumblang{}{I have some very basic knowledge of Japanese. I could probably order a meal at a restaurant.}}
 	\end{skills}
 
 \end{document}

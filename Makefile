@@ -2,7 +2,7 @@ CVs = zbiberle
 
 all: $(addsuffix .pdf, ${CVs})
 
-%.pdf: %.tex
+%.pdf: %.tex yaac-another-awesome-cv.cls zbiberle-foto.jpeg
 	lualatex $<
 
 clean:

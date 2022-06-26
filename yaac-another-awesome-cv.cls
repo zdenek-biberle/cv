@@ -56,7 +56,7 @@
 
 % Dependences
 %A Few Useful Packages
-\RequirePackage[english,french]{babel}
+\RequirePackage[english,czech]{babel}
 \RequirePackage[utf8]{luainputenc}
 \RequirePackage{fontspec} 					                 % for loading fonts
 \RequirePackage{url,parskip} 	    % other packages for formatting
@@ -358,20 +358,21 @@
   #1    &  #2 \\
 }
 
+\newcolumntype{E}{>{\raggedright\arraybackslash}p{\rightcolumnlength}}
+
 % Define the 'skills' environment
 \newenvironment{skills}{%
-  \begin{longtable}{R{\leftcolumn}p{\rightcolumnlength}}
+  \begin{longtable}{R{\leftcolumn}|E}
 }{%
   \end{longtable}
 }
 
 % Render a skill in the skills environment
-% Usage: \skill{<skill>}{<level>}
-\newcommand\skill[2]{
-  \textbf{#1}    & \foreach \x in {1,...,5}{{\color{accentcolor!80} \ifnumgreater{\x}{#2}{\faCircle[regular]}{\faCircle}}\enspace } \\
+% Usage: \skill{<skill>}{<level>}{<comment>}
+\newcommand\skill[3]{
+  \textbf{#1} & \foreach \x in {1,...,5}{{\color{accentcolor!80} \ifnumgreater{\x}{#2}{\faCircle[regular]}{\faCircle}}\enspace } \\*
+              & #3 \\
 }
-
-\newcolumntype{E}{>{\raggedright\arraybackslash}p{\rightcolumnlength}}
 
 % Define the 'experiences' environment
 \newenvironment{experiences}{%
@@ -389,7 +390,7 @@
 %                    }
 %                    {<Technology list>}
 \newcommand\experience[7]{
-  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
+  \textbf{#1}    & \textbf{#2, #3, #4}   								\\*
   \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
   					         #6
                    \end{minipage}										\\*
